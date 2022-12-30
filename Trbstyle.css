@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    background-color: #111;
+    color: #fff;
+}
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#main p{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times;
+}
+
+
+#image{
+    width: 100%;
+    height: 100;
+    max-width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 5px solid rgb(248, 227, 188);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 10px #272525;
+}
+
+figcaption{
+    margin: 20px;
+    font-size: 20px;
+    width: 55%;
+}
+
+
+.tribute-info{
+    display: grid;
+    grid-template-columns:300px 800px;
+    padding: 20px 25px;
+    grid-gap: 50px;
+
+}
+.tribute-info .image1 img{
+    width: 100%;
+    height: 100%;
+}
+.tribute-info .tribute-inner-content1 h1{
+    color: cyan;
+}
+.tribute-info .tribute-inner-content1 p{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 30px;
+	padding-top: 15px;
+}
+.tribute{
+    display: grid;
+    grid-template-columns:800px 300px;
+    padding: 20px 25px;
+    grid-gap: 50px;
+
+}
+.tribute .image2 img{
+    width: 100%;
+    height: 100%;
+}
+.tribute .tribute-inner-content2 h1{
+    color: cyan;
+}
+.tribute .tribute-inner-content2 p{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 30px;
+	padding-top: 15px;
+}
+.more_info h3{
+    padding-left: 300px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width:60px) {
+    figcaption{
+        width: 80%;
+        font-size: 15px;
+    }
+    #main{
+        margin-top: 0;
+    }
+    .tribute-info{
+        margin-top: 0;
+    }
+
+}
